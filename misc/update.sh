@@ -10,8 +10,8 @@ BENCH_USER="frappe"
 BENCH_DIR="/home/${BENCH_USER}/frappe-bench"
 SITE_NAME="site1.local"
 
-GN='\033[1;92m'; RD='\033[01;31m'; YW='\033[33m'; CL='\033[m'; BOLD='\033[1m'
-BFR='\\r\\033[K'; HOLD=' '
+GN=$'\033[1;92m'; RD=$'\033[01;31m'; YW=$'\033[33m'; CL=$'\033[m'; BOLD=$'\033[1m'
+BFR=$'\r\033[K'; HOLD=' '
 CM="${GN}✓${CL}"; CROSS="${RD}✗${CL}"
 msg_info() { echo -ne " ${HOLD} ${YW}${1}...${CL}"; }
 msg_ok()   { echo -e "${BFR} ${CM} ${GN}${1}${CL}"; }
