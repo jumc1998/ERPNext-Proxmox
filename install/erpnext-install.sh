@@ -21,13 +21,13 @@ NODE_MAJOR="20"
 PYTHON_VERSION="python3"
 
 # ─── Colour helpers ───────────────────────────────────────────────────────────
-YW='\033[33m'
-GN='\033[1;92m'
-RD='\033[01;31m'
-BL='\033[36m'
-CL='\033[m'
-BOLD='\033[1m'
-BFR='\\r\\033[K'
+YW=$'\033[33m'
+GN=$'\033[1;92m'
+RD=$'\033[01;31m'
+BL=$'\033[36m'
+CL=$'\033[m'
+BOLD=$'\033[1m'
+BFR=$'\r\033[K'
 HOLD=' '
 CM="${GN}✓${CL}"
 CROSS="${RD}✗${CL}"
@@ -73,7 +73,7 @@ install_base_deps() {
     build-essential \
     python3 python3-pip python3-dev python3-venv python3-setuptools \
     libssl-dev libffi-dev \
-    libmysqlclient-dev pkg-config \
+    default-libmysqlclient-dev pkg-config \
     redis-server \
     fonts-cantarell \
     xfonts-75dpi xfonts-base
